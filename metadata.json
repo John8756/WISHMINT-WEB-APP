@@ -1,0 +1,6 @@
+{
+  "name": "WISHMINT — Luxury Personalized Gifting & Artisanal Keepsakes",
+  "description": "Artisanal personalized gifts, everlasting crochet bouquets, BTS Borahae starlight collections, and couples keepsakes handcrafted to turn ordinary moments into timeless memories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
