@@ -1585,6 +1585,16 @@ async function startServer() {
     }
   });
 
+  // Dedicated Hostinger Static ZIP download endpoint
+  app.get('/download-hostinger-build', (req, res) => {
+    const zipPath = path.resolve(__dirname, 'WISHMINT-HOSTINGER-BUILD.zip');
+    if (fs.existsSync(zipPath)) {
+      res.download(zipPath, 'WISHMINT-HOSTINGER-BUILD.zip');
+    } else {
+      res.status(404).send('ZIP file not found. Please trigger a build first.');
+    }
+  });
+
   // -------------------------------------------------------------
   // VITE DEV SERVER OR STATIC PRODUCTION SERVING
   // -------------------------------------------------------------

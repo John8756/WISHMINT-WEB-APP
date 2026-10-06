@@ -9,7 +9,9 @@
     "start": "tsx server.ts",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "build:hostinger": "bash scripts/update-hostinger-branch.sh",
+    "deploy:hostinger": "bash scripts/update-hostinger-branch.sh"
   },
   "dependencies": {
     "@builder.io/react": "^4.0.0",

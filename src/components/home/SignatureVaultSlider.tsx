@@ -229,12 +229,6 @@ export const SignatureVaultSlider: React.FC<SignatureVaultSliderProps> = ({
                   className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 pointer-events-none"
                   referrerPolicy="no-referrer"
                 />
-
-                {/* Inspect / Quick View Pill */}
-                <div className="absolute bottom-2.5 right-2.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#4A234A] text-[10px] font-semibold flex items-center gap-1 shadow-md opacity-90 group-hover:opacity-100 transition-opacity">
-                  <Eye className="w-3 h-3 text-[#7A58AA]" />
-                  <span>Inspect</span>
-                </div>
               </div>
 
               {/* Content Information */}

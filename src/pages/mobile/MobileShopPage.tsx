@@ -183,12 +183,6 @@ export const MobileShopPage: React.FC = () => {
                       )}
                     </div>
                     <div className="flex items-center gap-2 flex-shrink-0">
-                      <button
-                        onClick={() => navigateTo('product-details', product.slug)}
-                        className="px-3.5 py-1.5 rounded-full bg-[#FFF9F5] border border-[#C9A46C]/60 text-[#4A234A] text-xs font-semibold hover:border-[#C9A46C] active:scale-95 transition-all cursor-pointer shadow-2xs"
-                      >
-                        Inspect
-                      </button>
                       <AnimatedAddToCartButton
                         onAdd={() => {
                           addToCart(product, 1);

@@ -141,13 +141,6 @@ export const RecentlyViewedSection: React.FC<RecentlyViewedSectionProps> = ({
                     )}
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <button
-                      type="button"
-                      onClick={() => navigateTo('product-details', p.slug)}
-                      className="flex-1 py-1 rounded-full bg-[#FFF9F5] border border-[#C9A46C]/60 text-[#4A234A] text-[10px] font-semibold text-center cursor-pointer hover:border-[#C9A46C]"
-                    >
-                      Inspect
-                    </button>
                     <AnimatedAddToCartButton
                       onAdd={() => {
                         addToCart(p, 1);
@@ -277,13 +270,6 @@ export const RecentlyViewedSection: React.FC<RecentlyViewedSectionProps> = ({
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <button
-                    type="button"
-                    onClick={() => navigateTo('product-details', p.slug)}
-                    className="px-3 py-1.5 rounded-full bg-[#FFF9F5] border border-[#C9A46C]/60 text-[#4A234A] text-xs font-semibold hover:border-[#C9A46C] cursor-pointer"
-                  >
-                    Inspect
-                  </button>
                   <AnimatedAddToCartButton
                     onAdd={() => {
                       addToCart(p, 1);
